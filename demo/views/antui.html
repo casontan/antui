@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/antui.css">
+  <style type="text/css">
+    /*example stylesheet*/
+    .grid div{
+      border:1px solid #ccc;
+      height: 50px;
+    }
+    .antui-progress,.button .antui-btn,.form .antui-form,.page .demo-item{
+      margin-bottom: 6px;
+    }
+    .label .antui-label{
+      margin-right: 10px;
+    }
+    .table .antui-table{
+      margin-bottom: 20px;
+    }
+    body{
+      padding-bottom: 600px;
+    }
+    
+    /**{margin-bottom: 2px}*/
+  </style>
+</head>
+<body>
+  <div class="antui">
+    <h1>button</h1>
+    <div class="button">
+      <div class="antui-btn antui-btn-default ">I am button</div>
+      <div class="antui-btn antui-btn-primary">I am button</div>
+      <div class="antui-btn antui-btn-info">I am button</div>
+      <div class="antui-btn antui-btn-success">I am button</div>
+      <div class="antui-btn antui-btn-warning">I am button</div>
+      <div class="antui-btn antui-btn-danger">I am button</div>
+      <div class="antui-btn antui-btn-secondary">I am button</div>
+      <div class="antui-btn antui-btn-primary disabled">I am button</div>
+      <div class="antui-btn antui-btn-link">I am button</div>
+      <button class="antui-btn antui-btn-primary antui-block">I am button</button>
+      <div class="antui-btn-group">
+        <div class="antui-btn antui-btn-primary">按钮1</div>
+        <div class="antui-btn antui-btn-info">按钮2</div>
+      </div>
+      <div class="antui-btn-group">
+        <div class="antui-btn antui-btn-primary">按钮1</div>
+        <div class="antui-btn antui-btn-info">按钮2</div>
+        <div class="antui-btn antui-btn-success">按钮3</div>
+        <div class="antui-btn antui-btn-danger">按钮按钮4</div>
+      </div>
+      <div class="antui-form-group page">
+        <input type="number" min="1" name="" class="antui-form">
+        <button class="antui-btn antui-btn-default">GO</button>
+      </div>
+    </div>
+    <h1>Label</h1>
+    <div class="label">
+      <span class="antui-label antui-success">
+        你好
+      </span>
+      <span class="antui-label antui-primary">
+        你好
+      </span>
+      <span class="antui-label antui-warning">
+        你好
+      </span>
+      <span class="antui-label antui-danger">
+        你好
+      </span>
+      <span class="antui-label antui-secondary">
+        你好
+      </span>
+    </div>
+
+    <h1>form</h1>
+    <div class="form">
+      <input type="text" name="" placeholder="nomal" class="antui-form">
+      <input type="text" name="" placeholder="disabled" disabled="disabled" class="antui-form">
+      <input type="text" name="" class="antui-block antui-form" placeholder="block" class="antui-form" >
+      <textarea rows="3" class="antui-block antui-form">textarea block</textarea>
+      <textarea rows="3" class="antui-block antui-form" disabled="disabled">textarea block disabled</textarea>
+
+      <div class="icon-form icon-left">
+        <i class="antui-icon">*</i>
+        <input type="text" name="" class="antui-form" placeholder="search..."> 
+      </div>
+      <div class="icon-form icon-right">
+        <input type="text" name="" class="antui-form"> 
+        <i class="antui-icon">*</i>
+      </div>
+      <div class="select">
+        <select class="antui-select antui-block">
+          <option>select1</option>
+          <option>select2</option>
+          <option>select3</option>
+          <option>select4</option>
+        </select>
+      </div>
+    </div>
+    <h1>grid</h1>
+    <div class="grid">
+      <div class="antui-row">
+        <div class="antui-col antui-12"></div>
+      </div>
+      <div class="antui-row">
+        <div class="antui-col antui-6"></div>
+        <div class="antui-col antui-6"></div>
+      </div>
+      <div class="antui-row">
+        <div class="antui-col antui-4"></div>
+        <div class="antui-col antui-4"></div>
+        <div class="antui-col antui-4"></div>
+      </div>
+      <div class="antui-row">
+        <div class="antui-col antui-3"></div>
+        <div class="antui-col antui-3"></div>
+        <div class="antui-col antui-3"></div>
+        <div class="antui-col antui-3"></div>
+      </div>
+      <div class="antui-row">
+        <div class="antui-col antui-2"></div>
+        <div class="antui-col antui-2"></div>
+        <div class="antui-col antui-2"></div>
+        <div class="antui-col antui-2"></div>
+        <div class="antui-col antui-2"></div>
+        <div class="antui-col antui-2"></div>
+      </div>
+       <div class="antui-row">
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+        <div class="antui-col antui-1"></div>
+      </div>
+    </div>
+    <h1>progress</h1>
+    <div class="antui-progress">
+      <div class="antui-progress-bar antui-success" style="width:30%">30%</div>
+    </div>
+    <div class="antui-progress progress-md">
+      <div class="antui-progress-bar antui-info" style="width:40%">40%</div>
+    </div>
+    <div class="antui-progress progress-md">
+      <div class="antui-progress-bar antui-danger" style="width:50%">50%</div>
+    </div>
+    <div class="antui-progress progress-lg">
+      <div class="antui-progress-bar antui-secondary" style="width:60%">60%</div>
+    </div>
+     <div class="antui-progress progress-lg">
+      <div class="antui-progress-bar antui-warning" style="width:80%">80%</div>
+    </div>
+
+    <h1>node line</h1>
+    <div class="node-line">
+      <div>
+        <ul class="antui-node-line">
+          <li class="completed">
+            <div class="line"></div>
+            <div class="inline"></div>
+            <div class="node-title">
+              审批
+            </div>
+          </li>
+          <li>
+            <div class="line"></div>
+            <div class="inline"></div>
+            <div class="node-title">
+              生产
+            </div>
+          </li>
+          <li>
+            <div class="circle"></div>
+            <div class="line"></div>
+            <div class="inline"></div>
+            <div class="node-title">
+              质检
+            </div>
+          </li>
+          <li>
+            <div class="line"></div>
+            <div class="inline"></div>
+            <div class="node-title">
+              发货
+            </div>
+          </li>
+          <li>
+            <div class="line"></div>
+            <div class="inline"></div>
+            <div class="node-title">
+              收款
+            </div>
+          </li>
+            <li>
+            <div class="line"></div>
+            <div class="inline"></div>
+            <div class="node-title">
+              完成
+            </div>
+          </li>
+
+        </ul>
+      </div>  
+    </div>
+
+    <h1>pagination</h1>
+    <div class="page">
+
+      <!--高度变小-->
+      <div class="demo-item">
+        <ul class="antui-page clear">
+          <li class="">首页</li>
+          <li class="antui-current">1</li>
+          <li class="">2</li>
+          <li class="">3</li>
+          <li class="">4</li>
+          <li class="">5</li>
+          <li class="">末页</li>
+        </ul>
+      </div>
+
+
+      <div class="demo-item">
+        <ul class="antui-page clear">
+          <li class="">首页</li>
+          <li class="antui-current">1</li>
+          <li class="">2</li>
+          <li class="">3</li>
+          <li class="">4</li>
+          <li class="">5</li>
+          <li class="">末页</li>
+        </ul>
+        <div class="antui-form-group page">
+          <input type="number" min="1" name="" class="antui-form">
+          <button class="antui-btn antui-btn-default">跳页</button>
+        </div>
+      </div>
+
+      <div class="demo-item">
+        <ul class="antui-page clear">
+          <li class="">首页</li>
+          <li class="antui-current">1</li>
+          <li class="">2</li>
+          <li class="">3</li>
+          <li class="">4</li>
+          <li class="">...</li>
+          <li class="">8</li>
+          <li class="">9</li>
+          <li class="">10</li>
+          <li class="">末页</li>
+        </ul>
+        <div class="antui-form-group page">
+          <input type="number" min="1" name="" class="antui-form">
+          <button class="antui-btn antui-btn-default">跳页</button>
+        </div>
+      </div>
+
+    </div>
+
+    <h1>table</h1>
+    <div class="table">
+      <table class="antui-table">
+        <caption>基本表格布局</caption>
+        <thead>
+          <tr><th>Name</th>
+          <th>Age</th>
+          <th>Job</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td data-label="Name">James</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Jill</td>
+            <td data-label="Age">26</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="antui-table line">
+        <caption>Line表格布局</caption>
+        <thead>
+          <tr><th>Name</th>
+          <th>Age</th>
+          <th>Job</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td data-label="Name">James</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Jill</td>
+            <td data-label="Age">26</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="antui-table line striped">
+        <caption>Line & striped表格布局</caption>
+        <thead>
+          <tr><th>Name</th>
+          <th>Age</th>
+          <th>Job</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td data-label="Name">James</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Jill</td>
+            <td data-label="Age">26</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="antui-table striped">
+        <caption>tfoot表格布局</caption>
+        <thead>
+          <tr><th>Name</th>
+          <th>Age</th>
+          <th>Job</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td data-label="Name">James</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Jill</td>
+            <td data-label="Age">26</td>
+            <td data-label="Job">Engineer</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><th colspan="3">
+            <div class="demo-item float-right">
+              <ul class="antui-page clear">
+                <li class="">首页</li>
+                <li class="antui-current">1</li>
+                <li class="">2</li>
+                <li class="">3</li>
+                <li class="">4</li>
+                <li class="">...</li>
+                <li class="">8</li>
+                <li class="">9</li>
+                <li class="">10</li>
+                <li class="">末页</li>
+              </ul>
+              <div class="antui-form-group page">
+                <input type="number" min="1" name="" class="antui-form">
+                <button class="antui-btn antui-btn-default">跳页</button>
+              </div>
+            </div>
+          </th>
+      </tr></tfoot>
+      </table>
+
+      <div class="antui-table-container">
+        <div class="antui-table-tools">
+          <div class="antui-btn-group">
+            <div class="antui-btn antui-btn-primary">添加</div>
+            <div class="antui-btn antui-btn-success">修改</div>
+            <div class="antui-btn antui-btn-danger">删除</div>
+            <div class="antui-btn antui-btn-info">刷新数据</div>
+          </div>
+
+          <div class="antui-form-group search">
+            <input type="text" name="search" class="antui-form">
+            <button class="antui-btn antui-btn-default">Search</button>
+          </div>
+        </div>
+        <table class="antui-table striped">
+          
+          <!-- <caption>tfoot表格布局</caption> -->
+          <thead>
+            <tr><th>Name</th>
+            <th>Age</th>
+            <th>Job</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Name">James</td>
+              <td data-label="Age">24</td>
+              <td data-label="Job">Engineer</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Jill</td>
+              <td data-label="Age">26</td>
+              <td data-label="Job">Engineer</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Elyse</td>
+              <td data-label="Age">24</td>
+              <td data-label="Job">Designer</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr><th colspan="3">
+              <div class="demo-item float-right">
+                <ul class="antui-page clear">
+                  <li class="">首页</li>
+                  <li class="antui-current">1</li>
+                  <li class="">2</li>
+                  <li class="">3</li>
+                  <li class="">4</li>
+                  <li class="">...</li>
+                  <li class="">8</li>
+                  <li class="">9</li>
+                  <li class="">10</li>
+                  <li class="">末页</li>
+                </ul>
+                <div class="antui-form-group page">
+                  <input type="number" min="1" name="" class="antui-form">
+                  <button class="antui-btn antui-btn-default">跳页</button>
+                </div>
+              </div>
+            </th>
+        </tr></tfoot>
+        </table>
+      </div>
+
+      <!-- END TABLE -->
+
+      <div class="">
+        <div class="antui-row">
+           <div class="antui-col antui-8">
+             <ul class="antui-page clear">
+               <li class="">First</li>
+               <li class="">Prev</li>
+               <li class="antui-current">1</li>
+               <li class="">2</li>
+               <li class="">3</li>
+               <li class="">4</li>
+               <li class="">...</li>
+               <li class="">8</li>
+               <li class="">9</li>
+               <li class="">10</li>
+               <li class="">Next</li>
+               <li class="">Last</li>
+             </ul>
+             <div class="antui-form-group page">
+               <input type="number" min="1" name="" class="antui-form">
+               <button class="antui-btn antui-btn-default">跳页</button>
+             </div>
+           </div>
+           <div class="antui-col antui-4 antui-text-right">
+             <div class="antui-page-info">
+               <label>共1000条记录，每页显示</label>
+                <select class="antui-select">
+                 <option>5</option>
+                 <option>20</option>
+                 <option>50</option>
+                 <option>100</option>
+                 <option>1000</option>
+               </select>
+               <label>条</label>
+             </div>
+           </div>
+         </div> 
+ 
+       </div>
+ 
+      
+       <div class="page-test" id="page-test">
+         
+       </div>
+       <hr>
+       <div class="table-test" id="table-test">
+         
+       </div>
+
+      
+
+      <h1>card</h1>
+      <!-- CARD -->
+      <div class="card-box">
+        <div class="antui-card">
+          <div class="card-heardimg">
+            <img src="../static/images/heardimg.png">
+          </div>
+          <div class="card-content">
+            <div class="card-title">
+              Cason<span class="antui-small float-right">Joined in 2019</span>
+            </div>
+            <div class="card-small-title">
+              casontan@hotmail.com
+            </div>
+            <div class="card-description">
+              <span class="antui-label antui-secondary">TAG1</span>
+              <span class="antui-label antui-warning">TAG2</span>
+              <span class="antui-label antui-primary">TAG3</span>
+              <span class="antui-label antui-success">TAG4</span>
+              <span class="antui-label antui-info">TAG5</span>
+              <span class="antui-label antui-danger">TAG6</span>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+      <!-- END CARD -->
+
+      <hr class="hr">
+     
+      
+
+
+      <h1>tab</h1>
+      <div class="tab-box" id="tab-box">
+        <div class="antui-tab">
+          <!--标签-->
+          <div class="antui-tab-items">
+            <div class="tab-item active">标题1</div>
+            <div class="tab-item">标题2</div>
+          </div>
+          <!--END 标签-->
+          <!--内容-->
+          <div class="tab-contents">
+            <div class="tab-content">
+              内容1
+            </div>
+            <div class="tab-content">
+              内容2
+            </div>
+          </div>
+          <!--END 内容-->
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--分页代码-->
+  <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    var total = 106,page_size = 18 ;
+    var total_page = Math.ceil(total/page_size); //计算总页数
+    var current_page = 9;
+    var page_size_arr = [5,10,20,50];
+    var base_num = 3;
+
+    // var dom = document.getElementById('page-test');
+    // antui_page(dom,total,page_size,current_page,page_size_arr,base_num);
+
+    // function antui_page(dom,total,page_size,current_page,page_size_arr,base_num){
+    
+    //   current_page = current_page > total_page ? 1 : current_page;
+
+    //   var page_html = '<div class="antui-row">';
+
+    //   //page info
+    //   page_html +='<div class="antui-col antui-4">';
+    //   page_html +='<div class="antui-page-info">';
+    //   page_html +='<label>共'+total+'条记录，每页显示</label>';
+    //   page_html +='<select class="antui-select">';
+     
+
+    //   //页容量可选
+    //   for (var i = 0; i < page_size_arr.length; i++) 
+    //     page_html +='<option value="'+page_size_arr[i]+'">'+page_size_arr[i]+'</option>';
+      
+    //   page_html +='</select>';
+    //   page_html +='<label>条</label>';
+    //   page_html += '</div>';//end antui-page-info
+    //   page_html += '</div>';//end antui-col
+    //   //end page info
+
+
+    //   //分页栏
+    //   page_html +='<div class="antui-col antui-8 antui-text-right">';
+    //   page_html +='<ul class="antui-page clear">';
+
+    //   if (total_page > base_num * 2)
+    //     page_html +='<li>First</li>';
+
+    //   page_html +='<li>Prev</li>';
+
+
+    //   for (var i = 1; i <= total_page; i++) {
+    //     //周围三个数
+    //     if(Math.abs(current_page - i) <= 1){
+    //       if(i == current_page)
+    //         page_html += '<li class="antui-current">'+i+'</li>';
+    //       else
+    //         page_html += '<li>'+i+'</li>';
+    //       continue;
+    //     }
+
+    //     //前后三个数
+    //     if(i <= base_num || i > total_page - base_num){
+    //       page_html += '<li>'+i+'</li>';
+    //       continue;
+    //     }
+
+    //     //省略处理 -- 前段
+    //     if(i > base_num && i < current_page - 1){
+    //       page_html += '<li>...</li>';
+    //       i = current_page - 2;
+    //       continue;//这里触发 i++
+    //     }
+    //     //省略处理 -- 后段
+    //     if(i > current_page + 1 && i <= total_page - base_num){
+    //       page_html += '<li>...</li>';
+    //       i = total_page - base_num;
+    //     }
+    //   }
+
+    //   page_html +='<li>Next</li>';
+    //   if(total_page > base_num * 2)
+    //     page_html +='<li>Last</li>';
+    //   page_html +='</ul>';
+
+    //   //跳页
+    //   if(total_page > base_num * 2){
+    //     page_html += '<div class="antui-form-group page">';
+    //     page_html += '<input type="number" min="1" max="'+ total_page +'" class="antui-form">';
+    //     page_html += '<button class="antui-btn antui-btn-default">跳页</button>';
+    //     page_html += '</div>';//end 跳页
+    //   }
+
+    //   page_html += '</div>';//end 分页按钮
+
+    //   page_html += '</div>';//end antui-row
+
+    //   dom.innerHTML = page_html;
+    // }
+
+    //table test
+    // var dom = document.getElementById('table-test');
+    // antui_table(dom,{
+    //   total:100,
+    //   items:[{
+    //     'id':1,
+    //     'name':'jack',
+    //     'age':18,
+    //     'job':'teacher'
+    //   },{
+    //     'id':2,
+    //     'name':'rose',
+    //     'age':19,
+    //     'job':'doctor'
+    //   },{
+    //     'id':3,
+    //     'name':'tom',
+    //     'age':19,
+    //     'job':'worker'
+    //   }]},{
+
+    //     'columns':[{
+    //       'key':'id',
+    //       'show':'ID',
+    //       // 'format':function_name
+    //     },{
+    //       'key':'name',
+    //       'show':'姓名',
+    //       // 'format':function_name
+    //     },{
+    //       'key':'age',
+    //       'show':'年龄',
+    //       'format':test_format
+    //     },{
+    //       'key':'job',
+    //       'show':'工作',
+    //     }],
+    //     'url':'http://www.baidu.com',
+    //     'method':'get'
+    // });
+
+    /**
+      data = {total:100,items:[
+        'name':'jack',
+        'age':18,
+        'job':'teacher'
+      ],[
+        'name':'rose',
+        'age':19,
+        'job':'dancer'
+      ]}
+
+      config = {
+        'columns':[
+          {
+            'key':'id';
+            'show':'ID'
+            'format': function_name
+          },{
+            'key':'name';
+            'show':'姓名'
+            'format': function_name
+          },{
+            'key':'age';
+            'show':'年龄'
+            'format': function_name
+          },{
+            'key':'job';
+            'show':'工作'
+            'format': function_name
+          }
+         ],
+        'url':'http://www.baidu.com',
+        'method':'get'
+      }
+    */
+    function test_format(value){
+      if(value>18)
+        return '<span style="color:red">'+value+'</span>'
+      return value;
+    }
+
+    function antui_table(dom,data,config){
+      var table_html = '<div class="antui-table-container">';
+
+      table_html += '<div class="antui-table-tools">';
+      table_html += '<div class="antui-btn-group">';
+      table_html += '<div class="antui-btn antui-btn-primary">添加</div>';
+      table_html += '<div class="antui-btn antui-btn-success">修改</div>';
+      table_html += '<div class="antui-btn antui-btn-danger">删除</div>';
+      table_html += '<div class="antui-btn antui-btn-info">刷新数据</div>';
+      table_html += '</div>';//end antui-btn-group
+      table_html += '<div class="antui-form-group search">';
+      table_html += '<input type="text" name="search" class="antui-form">';
+      table_html += '<button class="antui-btn antui-btn-default">Search</button>';
+      table_html += '</div>';//end search
+      table_html += '</div>';//end antui-table-tools
+
+      table_html += '<table class="antui-table striped">';
+
+      table_html += '<thead>';
+      table_html += '<tr>';
+
+      //遍历 显示表头
+      for(var i=0;i < config.columns.length;i++)
+        table_html += '<th>' + config.columns[i]['show'] + '</th>';
+      
+
+      table_html += '</tr>';
+      table_html += '</thead>';
+      table_html += '<tbody>';
+
+      //遍历 -- 所有数据列
+      for(var i=0;i < data.items.length;i++){
+        table_html += '<tr>';
+
+        //遍历所有的key
+        for (var j=0; j < config.columns.length; j++) {
+          var _key = config.columns[j]['key'],
+          _format = config.columns[j]['format'],
+          _value = data.items[i][_key];
+
+          if(_format && typeof(_format == 'function'))
+            _value =  _format(_value);
+          
+          table_html += '<td>'+ _value +'</td>';
+        }
+
+        table_html += '</tr>';
+
+      }
+
+      table_html += '</tbody>';
+      table_html += '<tfoot>';
+      table_html += '<tr>';
+      table_html += '<th colspan="'+ config.columns.length +'">';
+      table_html += '<div class="table-page">';//这里放分页
+      table_html += '</div>';
+      table_html += '</th>';
+      table_html += '</tr>';
+      table_html += '</tfoot>';
+      table_html += '</table>';
+      table_html += '</div>';
+
+      dom.innerHTML = table_html;
+
+      //分页
+      var page_dom = document.getElementsByClassName('table-page')[0];
+      var total = data.total,page_size = 18 ;
+      var total_page = Math.ceil(total/page_size); //计算总页数
+      var current_page = 9;
+      var page_size_arr = [5,10,20,50];
+      var base_num = 3;
+
+      antui_page(page_dom,total,page_size_arr[0],current_page,page_size_arr,base_num);
+    }
+
+    $('.tab-item').click(function(){
+      var _index = $(this).index('.tab-item');
+      if($(this).hasClass('active')) return;
+
+      $(this).addClass('active').siblings().removeClass('active');
+      $('.tab-content').eq(_index).show().siblings().hide();
+      console.log(_index);
+    })
+
+
+  </script>
+</body>
+</html>
